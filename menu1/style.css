@@ -1,0 +1,58 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg_sol_nascendo.jpg);
+    background-size: cover;
+    display: table;
+}
+
+.j1 {
+    text-align: center;
+}
+
+.nav {
+    height: 82px;
+}
+
+ul {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 50px;
+    list-style: none;
+    background: rgba(0,0,0,0.3);
+}
+
+li {
+    margin-top: 26px;
+    padding: auto;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    transition: 1s;
+    padding: 20px 30px;
+}
+
+li a:hover {
+    transition: 1s;
+    color:#000;
+    background: rgba(255, 255, 255, 0.7)
+
+}
