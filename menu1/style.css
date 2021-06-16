@@ -20,23 +20,27 @@ body {
 }
 
 .nav {
-    height: 82px;
+    height: 33px;
 }
 
 ul {
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
-    height: 50px;
+    margin-bottom: 2px;
+    width: 665px;
+    height: 20px;
     list-style: none;
     background: rgba(0,0,0,0.3);
+    padding: 20px;
+    vertical-align: middle;
 }
 
 li {
-    margin-top: 26px;
-    padding: auto;
-    display: inline-block;
+    margin-top: 28px;
+    
+    display: table-cell;
+    
 }
 
 li a {
