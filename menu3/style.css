@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+#logo {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid #B00;
+    margin: 10px 10px;
+}
+
+section {
+    border: 1px solid #000;
+}
+
+nav,
+ul,
+li {
+    border: 1px solid #000;
+}
+
+nav {
+    background-color: #ADADAD;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:active,
+a:hover {
+    background-color: #72727280;
+    transition: .3s;
+}
+
+ul {}
+
+li {}
+
+.checkbtn {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    float: right;
+    border: 1px solid #000;
+    text-decoration-style: none;
+}
