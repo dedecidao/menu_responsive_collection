@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ; /* Nao sei o que */
+}
+
+body {
+    height: 100vh; /* Ainda tenho algumas duvidas a respeito do uso do VH */
+    display: flex; /* Configura todo o body como um display flexivel e todos os elementos filhos passar a ser itens */
+    align-items: center; /* Alinha ao centro no eixo principal */
+    justify-content: center; /* ALinha ao centro no eixo cruzado */
+    background: #FF676D
+}
+
+.box {
+    background-color: #FFF;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5); /* Não sei ainda direito usar essa propriedade */
+    display: flex;     
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+
+}
+
+.box .icon { /* Repetir no seletor o ponto da classe filha */
+    border: 1px solid;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    margin: 0px 8px;
+    transition: all 0.3s ease;
+}
+
+.box .icon.active{
+    background: #FF676D;
+}
+.box .icon.line.active{
+    background: #FFF;
+}
+
+.box .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #333;
+    pointer-events: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.box .icon.active i {
+    color: #FFF; 
+}
+.box .icon.line.active i {
+    color: #333; 
+}
+
+.box .icon.active i.open {
+    transform: translate(-50%, -50%) rotate(180deg) ;
+    opacity: 0; 
+}
+
+.box .icon.active i.close {
+    opacity: 1; 
+    transform: translate(-50%, -50%) rotate(180deg) ;
+
+}
+.box .icon.line.active i.close {
+    transform: translate(-50%, -50%) rotate(0deg) ;
+    opacity: 1; 
+}
+.box .icon i.close {
+    opacity: 0; 
+}
+.box .icon i.open {
+    opacity: 1;
+}
